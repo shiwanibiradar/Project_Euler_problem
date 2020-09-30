@@ -1,0 +1,20 @@
+
+
+
+n=int(input("Enter the outbound"))
+sum=0
+a=[]
+n1,n2=0,1
+while sum < n:
+	nth=n1+n2
+	n1=n2
+	n2=nth
+	if (n2 > 4000000):
+		break
+	a.append(nth)
+for x in a:
+	if (x%2==0):
+		sum=sum+x
+print(a)
+print (sum)
+	
